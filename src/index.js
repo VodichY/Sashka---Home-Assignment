@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const assignmRouter = require('./assignm.route');
+const productsRouter = require('./products.route');
 
 app.use(express.json());
 
@@ -12,7 +12,7 @@ app.use('/', (req, res, next) => {
     next();
   });
 
-  app.use('/assignm', assignmRouter);
+  app.use('/products', productsRouter);
   
   app.listen(4000, () =>
     console.log('App is running on http://localhost:4000')
