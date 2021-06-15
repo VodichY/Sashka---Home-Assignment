@@ -28,7 +28,7 @@ async function getProductsData(argRes: Array<Promise<IDataHtml>>) {
 
 function getHtmlPage(url: string): Promise<IDataHtml> {
     return axios
-        .get(url)
+        .get(url, { headers: { 'Content-Type': 'text/html;charset=UTF-8' } })
         .then((res: AxiosResponse) => {
             return { 'htmlPage': res.data, 'nDomen': getDomen(url) };
         })
