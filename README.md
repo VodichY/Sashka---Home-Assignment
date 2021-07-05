@@ -7,3 +7,5 @@ nodejs - v14.17.0
 3. run the app - npm start 
 ---
    To check, you can use Postman or another client, send a post request to the address "http://localhost:4000/products" with the body of an array of links ["https://www.amazon.com/Nike-Experience-White-Cool-Grey-Reflective-Regular/dp/B00V88DL72/","https://www.amazon.com/Nike-Experience-White-Cool-Grey-Reflective-Regular/dp/B00V88DL72/"]
+
+also you can use docker image - https://hub.docker.com/repository/docker/yvodzich/docker-home-assigment   
